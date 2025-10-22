@@ -169,19 +169,19 @@
         <!-- Image Scroller Section -->
         <section class="image-scroller-section">
             <div class="scroller-container">
-                <h2 class="scroller-title">Domain Extra Details</h2>
+                <h2 class="scroller-title">Domain Evaluation</h2>
                 <div class="image-scroller">
                     <div class="scroller-track">
-                        <div class="scroller-item">
+                        <div class="scroller-item" onclick="openModal('https://i.ibb.co/844RcR9f/bps-3.png', 'Domain Evaluation Details 1')">
                             <img src="https://i.ibb.co/844RcR9f/bps-3.png" alt="Domain Extra Details 1" class="scroller-image">
                         </div>
-                        <div class="scroller-item">
+                        <div class="scroller-item" onclick="openModal('https://i.ibb.co/jPg9jDXg/bps-2.png', 'Domain Evaluation Details 2')">
                             <img src="https://i.ibb.co/jPg9jDXg/bps-2.png" alt="Domain Extra Details 2" class="scroller-image">
                         </div>
-                        <div class="scroller-item">
+                        <div class="scroller-item" onclick="openModal('https://i.ibb.co/844RcR9f/bps-3.png', 'Domain Evaluation Details 1')">
                             <img src="https://i.ibb.co/844RcR9f/bps-3.png" alt="Domain Extra Details 1" class="scroller-image">
                         </div>
-                        <div class="scroller-item">
+                        <div class="scroller-item" onclick="openModal('https://i.ibb.co/jPg9jDXg/bps-2.png', 'Domain Evaluation Details 2')">
                             <img src="https://i.ibb.co/jPg9jDXg/bps-2.png" alt="Domain Extra Details 2" class="scroller-image">
                         </div>
                     </div>
@@ -321,6 +321,13 @@
         </section>
     </div>
 
+    <!-- Image Modal -->
+    <div id="imageModal" class="modal">
+        <span class="close" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div id="modalCaption"></div>
+    </div>
+
     <script>
         // Initialize Lucide icons
         lucide.createIcons();
@@ -396,6 +403,43 @@
                     isStatsVisible = false;
                 }
             });
+        });
+        
+        // Modal functionality for image scroller
+        function openModal(imageSrc, imageAlt) {
+            const modal = document.getElementById('imageModal');
+            const modalImage = document.getElementById('modalImage');
+            const modalCaption = document.getElementById('modalCaption');
+            
+            modal.style.display = 'block';
+            modalImage.src = imageSrc;
+            modalCaption.textContent = imageAlt;
+            
+            // Prevent body scroll when modal is open
+            document.body.style.overflow = 'hidden';
+        }
+        
+        function closeModal() {
+            const modal = document.getElementById('imageModal');
+            modal.style.display = 'none';
+            
+            // Restore body scroll
+            document.body.style.overflow = 'auto';
+        }
+        
+        // Close modal when clicking outside the image
+        window.onclick = function(event) {
+            const modal = document.getElementById('imageModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+        
+        // Close modal with Escape key
+        document.addEventListener('keydown', function(event) {
+            if (event.key === 'Escape') {
+                closeModal();
+            }
         });
     </script>
 </body>
