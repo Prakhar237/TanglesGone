@@ -17,6 +17,13 @@
     <link rel="stylesheet" href="standalone-styles.css">
 </head>
 <body>
+    <!-- Powered By Link -->
+    <div style="position: fixed; top: 10px; left: 10px; z-index: 10000; background: rgba(255, 255, 255, 0.9); padding: 0.5rem 1rem; border-radius: 0.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1);">
+        <a href="https://promotionocean.com" target="_blank" style="font-size: 0.75rem; color: hsl(var(--primary)); text-decoration: none; font-family: 'Poppins', sans-serif; font-weight: 500;">
+            Powered by promotionocean.com
+        </a>
+    </div>
+
     <div class="container">
         <!-- Hero Section -->
         <section class="hero-section">
@@ -25,7 +32,7 @@
                 <span class="badge">Premium Domain Available</span>
                 <h1 class="hero-title">Tanglesgone.com</h1>
                 <p class="hero-subtitle">The ultimate destination for hair detangling solutions, smooth styling tips, and frizz-free confidence.</p>
-                <div class="hero-price">$3,500</div>
+                <div class="hero-price">$2,100</div>
                 <button class="btn btn-primary btn-lg">Contact Seller</button>
             </div>
         </section>
@@ -35,7 +42,7 @@
             <div class="metrics-grid">
                 <div class="metric-card">
                     <div class="metric-icon-wrapper">
-                        <span class="metric-number">7</span>
+                        <span class="metric-number">0</span>
                     </div>
                     <div class="metric-header">
                         <p class="metric-title">Backlinks</p>
@@ -51,13 +58,13 @@
                 </div>
 
                 <div class="metric-card">
-                    <div class="metric-value">235</div>
+                    <div class="metric-value">21</div>
                     <p class="metric-title-alt">Monthly Visits</p>
                     <p class="metric-description">Organic Traffic</p>
                 </div>
 
                 <div class="metric-card">
-                    <div class="metric-value">7/10</div>
+                    <div class="metric-value">8/10</div>
                     <p class="metric-title-alt">SEO Rating</p>
                     <p class="metric-description">Excellent Score</p>
                 </div>
@@ -194,6 +201,54 @@
                         
                         <p class="daas-text">
                             By choosing sustainable haircare practices, you're not only keeping your locks tangle-free but also contributing to a cleaner, greener planet. This season, let your beauty routine reflect the best of both worlds — eco-conscious and effortlessly smooth.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Third Blog Section (Collapsible) -->
+        <section class="daas-section">
+            <div class="daas-container">
+                <div class="daas-card">
+                    <div class="secondary-blog-header" onclick="toggleThirdBlog()">
+                        <span class="badge badge-secondary">Featured Blog</span>
+                        <h2 class="daas-title">
+                            Tanglesgone.com: A High-Potential Beauty Brand Domain Ready for Lift-Off <i data-lucide="chevron-down" id="thirdBlogIcon" class="collapse-icon"></i>
+                        </h2>
+                    </div>
+                    
+                    <div class="daas-content" id="thirdBlogContent" style="display: none;">
+                        <p class="daas-intro">
+                            In the booming world of haircare and beauty e-commerce, brand identity is everything — and few names communicate clarity of purpose like Tanglesgone.com. Whether you're launching a premium detangling product line, building a content-rich authority site, or expanding an existing beauty brand, this domain offers a distinctive competitive advantage from day one. Its clean, memorable name instantly conveys transformation, results, and effortless haircare — the exact message consumers are searching for.
+                        </p>
+                        
+                        <p class="daas-text">
+                            Unlike generic or overly complex names, Tanglesgone.com taps directly into one of the most universal pain points in personal care: tangled, unmanageable hair. With millions of monthly searches around detangling tips, smoothing products, frizz solutions, and hair health, this domain sits at the intersection of high demand and strong conversion potential. It is instantly brandable and carries strong emotional relevance—something big beauty brands spend millions trying to achieve.
+                        </p>
+                        
+                        <h3 class="daas-heading">Built for Multiple Monetization Paths</h3>
+                        
+                        <p class="daas-text">
+                            The beauty of Tanglesgone.com lies in its flexibility. You can develop it into:
+                        </p>
+                        
+                        <ul class="feature-list">
+                            <li><span class="checkmark">1.</span> A DTC product brand selling brushes, sprays, serums, and conditioners.</li>
+                            <li><span class="checkmark">2.</span> A review and affiliate hub recommending top detangling tools.</li>
+                            <li><span class="checkmark">3.</span> A salon or stylist resource portal with tutorials and product partnerships.</li>
+                            <li><span class="checkmark">4.</span> A digital download store offering routines, guides, and e-books.</li>
+                            <li><span class="checkmark">5.</span> A haircare influencer brand with viral content hooks built right into the name.</li>
+                        </ul>
+                        
+                        <p class="daas-text">
+                            No matter the model, the domain's natural keyword alignment drives organic trust and search visibility.
+                        </p>
+                        
+                        <h3 class="daas-heading">A Future-Proof Asset</h3>
+                        
+                        <p class="daas-text">
+                            As consumer interest in natural haircare, protective styling, and curl-safe products continues to rise, Tanglesgone.com becomes even more valuable. It's a domain with both immediate usability and long-term brand expansion potential — a rare combination in today's crowded beauty landscape. If you're ready to acquire a domain that delivers clarity, authority, and market-ready storytelling in a single name, Tanglesgone.com is a strategic investment poised for high return.
                         </p>
                     </div>
                 </div>
@@ -480,6 +535,24 @@
         function toggleSecondaryBlog() {
             const content = document.getElementById('secondaryBlogContent');
             const icon = document.getElementById('secondaryBlogIcon');
+            
+            if (content.style.display === 'none' || content.style.display === '') {
+                content.style.display = 'block';
+                content.style.animation = 'slideDown 0.3s ease';
+                icon.style.transform = 'rotate(180deg)';
+            } else {
+                content.style.animation = 'slideUp 0.3s ease';
+                setTimeout(() => {
+                    content.style.display = 'none';
+                }, 300);
+                icon.style.transform = 'rotate(0deg)';
+            }
+        }
+        
+        // Third Blog Toggle Functionality
+        function toggleThirdBlog() {
+            const content = document.getElementById('thirdBlogContent');
+            const icon = document.getElementById('thirdBlogIcon');
             
             if (content.style.display === 'none' || content.style.display === '') {
                 content.style.display = 'block';
