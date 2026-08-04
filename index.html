@@ -1,656 +1,405 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title id="page-title">Please Enter Blog Content from Dashboard | For Sale</title>
-    <meta id="page-desc" name="description"
-        content="Premium domain Tanglesgone.com for sale. Perfect for hair detangler manufacturers and hair care brands. 4 backlinks, 2K monthly visits. Hair Detangler available.">
-
+    <meta id="page-desc" name="description" content="Premium domain Tanglesgone.com for sale.">
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <!-- Lucide Icons CDN -->
     <script src="https://unpkg.com/lucide@latest"></script>
-
     <link rel="stylesheet" href="standalone-styles.css">
 </head>
-
 <body>
-    <!-- Powered By Link -->
-    <div id="powered-by-badge"
-        style="position: fixed; top: 10px; left: 10px; z-index: 10000; background: rgba(255, 255, 255, 0.9); padding: 0.5rem 1rem; border-radius: 0.5rem; box-shadow: 0 2px 8px rgba(0,0,0,0.1); display: none;">
-        <a href="https://promotionocean.com" target="_blank"
-            style="font-size: 0.75rem; color: hsl(var(--primary)); text-decoration: none; font-family: 'Poppins', sans-serif; font-weight: 500;">
-            Powered by promotionocean.com
-        </a>
+    <div class="video-bg">
+        <video autoplay loop muted playsinline src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260405_170732_8a9ccda6-5cff-4628-b164-059c500a2b41.mp4"></video>
+        <div class="noise-overlay"></div>
+        <div class="gradient-overlay-full"></div>
     </div>
 
-    <div class="container">
+    <!-- Navbar -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">Tanglesgone.com</div>
+            <div class="nav-links">
+                <a href="#overview">Overview</a>
+                <a href="#benefits">Benefits</a>
+                <a href="#evaluation">Evaluation</a>
+                <a href="#insights">Market Insights</a>
+                <a href="#why">Why Tanglesgone?</a>
+            </div>
+            <button class="btn btn-pill">Enquire Now <i data-lucide="arrow-right"></i></button>
+        </div>
+    </nav>
+
+    <div class="container main-content">
         <!-- Hero Section -->
-        <section class="hero-section">
-            <div class="hero-background"></div>
-            <div class="hero-content">
-                <span class="badge">Premium Domain Available</span>
-                <h1 class="hero-title" id="hero-domain">Please Enter Domain Name from Dashboard</h1>
-                <p class="hero-subtitle" id="hero-overview">Please Enter Overview from Dashboard</p>
-                <div class="hero-price" id="hero-price">Please Enter Price from Dashboard</div>
-                <button class="btn btn-primary btn-lg">Enter From Dashboard</button>
+        <section class="hero-section" id="overview">
+            <div class="hero-grid">
+                <!-- Left Content -->
+                <div class="hero-left">
+                    <span class="badge gold-badge">PREMIUM DOMAIN FOR SALE</span>
+                    <h1 class="hero-title" id="hero-domain">Please Enter Domain Name from Dashboard</h1>
+                    <p class="hero-subtitle" id="hero-overview">Please Enter Overview from Dashboard</p>
+                    <div class="hero-price" id="hero-price" style="display:none;"></div>
+                    <div class="hero-buttons">
+                        <button class="btn btn-gold">Make it Yours <i data-lucide="arrow-right"></i></button>
+                        <button class="btn btn-outline">View Domain Insights</button>
+                    </div>
+                    <div class="trust-badges">
+                        <div class="trust-badge"><i data-lucide="shield-check"></i> <div><strong>Secure Transaction</strong><span>Escrow Protected</span></div></div>
+                        <div class="trust-badge"><i data-lucide="zap"></i> <div><strong>Instant Ownership</strong><span>Transfer via Escrow</span></div></div>
+                        <div class="trust-badge"><i data-lucide="award"></i> <div><strong>Premium Asset</strong><span>High Brand Value</span></div></div>
+                    </div>
+                </div>
+                
+                <!-- Right Metrics -->
+                <div class="hero-right-metrics">
+                    <div class="hero-metric-card">
+                        <div class="hm-icon"><i data-lucide="calendar"></i></div>
+                        <div class="hm-data">
+                            <span class="hm-label">Domain Age</span>
+                            <span class="hm-value" id="metric-age">2+ Years</span>
+                        </div>
+                    </div>
+                    <div class="hero-metric-card">
+                        <div class="hm-icon"><i data-lucide="users"></i></div>
+                        <div class="hm-data">
+                            <span class="hm-label">Monthly Volume</span>
+                            <span class="hm-value" id="metric-visits">21 Searches</span>
+                        </div>
+                    </div>
+                    <div class="hero-metric-card">
+                        <div class="hm-icon"><i data-lucide="activity"></i></div>
+                        <div class="hm-data">
+                            <span class="hm-label">SEO Rating</span>
+                            <span class="hm-value" id="metric-seo">8/10</span>
+                        </div>
+                    </div>
+                    <div class="hero-metric-card">
+                        <div class="hm-icon"><i data-lucide="link"></i></div>
+                        <div class="hm-data">
+                            <span class="hm-label">Backlinks</span>
+                            <span class="hm-value" id="metric-backlinks">0</span>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <!-- Metrics Section -->
-        <section class="metrics-section">
-            <div class="metrics-grid">
-                <div class="metric-card">
-                    <div class="metric-icon-wrapper">
-                        <span class="metric-number" id="metric-backlinks">0</span>
-                    </div>
-                    <div class="metric-header">
-                        <p class="metric-title">Backlinks</p>
-                        <i data-lucide="trending-up" class="trending-icon"></i>
-                    </div>
-                    <p class="metric-description">Strong SEO Foundation</p>
-                </div>
-
-                <div class="metric-card">
-                    <div class="metric-value" id="metric-age">2 years</div>
-                    <p class="metric-title-alt">Domain Age</p>
-                    <p class="metric-description">Established Authority</p>
-                </div>
-
-                <div class="metric-card">
-                    <div class="metric-value" id="metric-visits">21</div>
-                    <p class="metric-title-alt">Monthly Visits</p>
-                    <p class="metric-description">Organic Traffic</p>
-                </div>
-
-                <div class="metric-card">
-                    <div class="metric-value" id="metric-seo">8/10</div>
-                    <p class="metric-title-alt">SEO Rating</p>
-                    <p class="metric-description">Excellent Score</p>
-                </div>
+        <!-- 4-Column Features Row -->
+        <section class="features-row" id="benefits">
+            <div class="feature-box">
+                <i data-lucide="zap" class="fb-icon"></i>
+                <h3 class="fb-title">Short & Catchy</h3>
+                <p class="fb-desc">Easy to remember, easy to type, hard to forget.</p>
+            </div>
+            <div class="feature-box">
+                <i data-lucide="shield" class="fb-icon"></i>
+                <h3 class="fb-title">Brandable</h3>
+                <p class="fb-desc">Unique name with strong brand identity potential.</p>
+            </div>
+            <div class="feature-box">
+                <i data-lucide="target" class="fb-icon"></i>
+                <h3 class="fb-title">Niche Perfect</h3>
+                <p class="fb-desc">Ideal for hair care, detangling products or beauty brands.</p>
+            </div>
+            <div class="feature-box">
+                <i data-lucide="search" class="fb-icon"></i>
+                <h3 class="fb-title">SEO Friendly</h3>
+                <p class="fb-desc">High relevance with keyword rich potential.</p>
             </div>
         </section>
 
-        <!-- About Section -->
-        <section class="about-section">
-            <div class="about-container">
-                <div class="card card-luxury">
-                    <h2 class="section-title" id="about-title">About Tanglesgone.com</h2>
-                    <p class="section-description" id="about-body">
-                        Tanglesgone.com is a premium domain ideal for a brand specializing in hair care, detangling
-                        products, or professional styling advice. Its memorable, brandable name instantly evokes
-                        smoothness, ease, and beauty. Perfect for launching an eCommerce store, salon brand, or
-                        influencer-driven beauty platform.
-                    </p>
-
-                    <div class="about-grid">
+        <!-- About The Domain -->
+        <section class="about-split glass-panel">
+            <div class="about-image">
+                <img src="https://d8j0ntlcm91z4.cloudfront.net/user_38xzZboKViGWJOttwIXH07lWA1P/hf_20260405_171918_4a5edc79-d78f-4637-ac8b-53c43c220606.png" alt="Domain Hero">
+            </div>
+            <div class="about-content">
+                <span class="sub-label">ABOUT THE DOMAIN</span>
+                <h2 class="section-title" id="about-title">Tanglesgone.com</h2>
+                <div class="about-text" id="about-body">
+                    Tanglesgone.com is a premium domain ideal for a brand specializing in hair care, detangling products, or professional styling solutions. Its memorable, brandable name instantly evokes smoothness, ease and beauty.
+                </div>
+                <div class="about-metrics-horizontal">
+                    <div class="amh-stat">
+                        <i data-lucide="calendar"></i>
                         <div>
-                            <h3 class="subsection-title">Perfect For</h3>
-                            <ul class="list" id="perfect-for-list">
-                                <li>• Haircare brands selling detangling sprays, brushes, or conditioners</li>
-                                <li>• Beauty influencers creating tutorials or product reviews</li>
-                                <li>• Salons and stylists promoting professional hair treatments</li>
-                                <li>• E-commerce startups focused on frizz control and natural hair care</li>
-                                <li>• Affiliate marketers targeting the beauty, wellness, and self-care niche</li>
-                            </ul>
+                            <div class="amh-val">2+</div>
+                            <div class="amh-lbl">Years Old<br>Established domain with history</div>
                         </div>
-
+                    </div>
+                    <div class="amh-stat">
+                        <i data-lucide="users"></i>
                         <div>
-                            <h3 class="subsection-title">Market Opportunity</h3>
-                            <ul class="list" id="market-opportunity-list">
-                                <li>• Global haircare market already exceeds $100B, with fast growth in detangling and
-                                    natural-care segments</li>
-                                <li>• Increasing demand for tangle-free and frizz-control solutions across all hair
-                                    types</li>
-                                <li>• Growing influencer economy that boosts organic reach and brand visibility</li>
-                                <li>• SEO-friendly niche with strong keyword potential: "detangling hair," "smooth hair
-                                    tips," "hair care routines"</li>
-                                <li>• Strong opportunity for DTC brands offering recurring products and subscriptions
-                                </li>
-                            </ul>
+                            <div class="amh-val">21</div>
+                            <div class="amh-lbl">Monthly Searches<br>Verified organic search volume</div>
+                        </div>
+                    </div>
+                    <div class="amh-stat">
+                        <i data-lucide="target"></i>
+                        <div>
+                            <div class="amh-val">8/10</div>
+                            <div class="amh-lbl">SEO Score<br>Strong SEO potential for ranking</div>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Hair De-Tangler Blog Section -->
-        <section class="daas-section">
-            <div class="daas-container">
-                <div class="daas-card">
-                    <h2 class="daas-title" id="mini-blog-title">
-                        Say Goodbye to Hair Tangles – Welcome to Tanglesgone.com
-                    </h2>
-
-                    <div class="daas-content">
-                        <div id="mini-blog-paragraphs">
-                            <p class="daas-intro">
-                                There's nothing more frustrating than waking up to knotted, tangled hair. Whether you
-                                have curls, waves, or straight locks, detangling can be a daily struggle that leads to
-                                breakage and stress. That's where Tanglesgone.com steps in — a name that perfectly
-                                represents smoothness, simplicity, and effortless beauty.
-                            </p>
-
-                            <p class="daas-text">
-                                This powerful, brandable domain opens the door to endless opportunities in the booming
-                                haircare market. From detangling sprays and conditioners to specialized brushes and
-                                protective products, consumers are actively searching for reliable solutions. A
-                                well-optimized site built on Tanglesgone.com can easily capture organic traffic from
-                                people seeking tips, tutorials, and trusted products that make their hair routine
-                                easier.
-                            </p>
-
-                            <p class="daas-text">
-                                Imagine creating a brand that resonates with confidence and care — a place where beauty
-                                meets simplicity. With the right content strategy and SEO foundation, Tanglesgone.com
-                                can become a recognized authority in natural hair management, salon tips, and product
-                                innovation.
-                            </p>
-
-                            <p class="daas-text">
-                                In an era where authenticity and results drive customer loyalty, Tanglesgone.com
-                                delivers instant recognition and emotional connection. If you're building a brand that
-                                celebrates healthy, manageable hair — this domain is your perfect foundation.
-                            </p>
-                        </div>
-
-                        <div class="daas-grid">
-                            <div class="daas-feature-card feature-primary">
-                                <div class="feature-header">
-                                    <div class="feature-icon icon-primary">
-                                        <i data-lucide="heart"></i>
-                                    </div>
-                                    <h3 class="feature-title" id="sf1-title">Special Feature 1</h3>
-                                </div>
-                                <p class="feature-description" id="sf1-desc">
-                                    Tanglesgone.com carries strong emotional resonance, combining ease, beauty, and
-                                    transformation in one name — perfect for a consumer-facing haircare brand that wants
-                                    instant trust and memorability.
-                                </p>
-                            </div>
-
-                            <div class="daas-feature-card feature-secondary">
-                                <div class="feature-header">
-                                    <div class="feature-icon icon-secondary">
-                                        <i data-lucide="hand"></i>
-                                    </div>
-                                    <h3 class="feature-title" id="sf2-title">Special Feature 2</h3>
-                                </div>
-                                <p class="feature-description" id="sf2-desc">
-                                    With its exact-match keyword potential, Tanglesgone.com can naturally rank for
-                                    search phrases like "tangles gone," "detangling hair," and "how to get rid of
-                                    tangles" — driving consistent, qualified traffic to your beauty brand or blog.
-                                </p>
-                            </div>
-                        </div>
+        <!-- Why It's Perfect -->
+        <section class="why-perfect glass-panel">
+            <span class="sub-label center">WHY IT'S PERFECT</span>
+            <h2 class="section-title center">Built for Success in the Hair & Beauty Market</h2>
+            
+            <div class="wp-grid">
+                <div class="wp-list-box">
+                    <ul class="gold-check-list" id="perfect-for-list">
+                        <li><i data-lucide="check-circle-2"></i> Ideal for detangling sprays, tools, and hair care kits</li>
+                        <li><i data-lucide="check-circle-2"></i> Great for salons, stylist brands, and hair care professionals</li>
+                        <li><i data-lucide="check-circle-2"></i> Easily adaptable for D2C eCommerce stores</li>
+                        <li><i data-lucide="check-circle-2"></i> Strong brand recall and trust factor</li>
+                        <li><i data-lucide="check-circle-2"></i> High commercial value with low competition</li>
+                    </ul>
+                </div>
+                <div class="wp-market-box" id="market-opportunity-list">
+                    <span class="gold-subtitle">MARKET OPPORTUNITY</span>
+                    <p>The global hair care market is valued at over $85B and is growing consistently thanks to increased awareness and demand for specialized products.</p>
+                    <p>Detangling products and solutions are a fast-growing segment with a loyal customer base.</p>
+                    <div class="wp-highlight">
+                        <i data-lucide="lock"></i> Secure this domain and position your brand at the heart of this booming market.
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Secondary Blog Section (Collapsible) -->
-        <section class="daas-section">
-            <div class="daas-container">
-                <div class="daas-card">
-                    <div class="secondary-blog-header" onclick="toggleSecondaryBlog()">
-                        <h2 class="daas-title">
-                            <span id="secondary-blog-title">Winter Tangles and How to Beat Them Naturally: Eco-Friendly
-                                Detangling Secrets</span> <i data-lucide="chevron-down" id="secondaryBlogIcon"
-                                class="collapse-icon"></i>
-                        </h2>
+        <!-- Why Invest (High Value Asset) -->
+        <section class="invest-section glass-panel">
+            <span class="sub-label center">WHY INVEST IN TANGLESGONE.COM?</span>
+            <h2 class="section-title center">A High-Value Asset with Long-Term Potential</h2>
+            
+            <div class="invest-grid">
+                <div class="invest-card">
+                    <div class="ic-icon"><i data-lucide="star"></i></div>
+                    <div class="ic-content">
+                        <h4>Memorable & Unique</h4>
+                        <p>Stands out in a crowded market.</p>
                     </div>
-
-                    <div class="daas-content" id="secondary-blog-paragraphs" style="display: none;">
-                        <p class="daas-intro">
-                            When the cold season hits, hair tangles become tougher, drier, and harder to manage. Low
-                            humidity and constant friction from scarves or sweaters often lead to unwanted knots that
-                            break and frizz. But before you reach for another chemical-laden detangler, let's talk about
-                            eco-friendly solutions that are kinder to your hair and the planet.
-                        </p>
-
-                        <h3 class="daas-heading">1. Switch to a Sustainable Brush</h3>
-                        <p class="daas-text">
-                            An eco detangling brush made from bamboo or recycled materials glides through hair while
-                            reducing static and waste. It's perfect for sensitive scalps and offers a smoother, more
-                            natural detangling experience.
-                        </p>
-
-                        <h3 class="daas-heading">2. Moisture Matters</h3>
-                        <p class="daas-text">
-                            During colder months, your hair needs extra hydration. Incorporate plastic-free haircare
-                            products like solid conditioners rich in coconut oil, shea butter, and aloe vera — all
-                            proven to reduce tangles naturally.
-                        </p>
-
-                        <h3 class="daas-heading">3. Detangle Gently, Not Forcefully</h3>
-                        <p class="daas-text">
-                            Always start from the ends and work upward in sections. Gentle detangling tips can make the
-                            difference between smooth strands and unnecessary breakage.
-                        </p>
-
-                        <h3 class="daas-heading">4. Sleep Smart</h3>
-                        <p class="daas-text">
-                            Switch to silk or satin pillowcases to reduce friction overnight — one of the simplest ways
-                            to say goodbye to morning tangles.
-                        </p>
-
-                        <p class="daas-text">
-                            By choosing sustainable haircare practices, you're not only keeping your locks tangle-free
-                            but also contributing to a cleaner, greener planet. This season, let your beauty routine
-                            reflect the best of both worlds — eco-conscious and effortlessly smooth.
-                        </p>
+                </div>
+                <div class="invest-card">
+                    <div class="ic-icon"><i data-lucide="shopping-cart"></i></div>
+                    <div class="ic-content">
+                        <h4>Commercial Intent</h4>
+                        <p>Perfect for eCommerce, salons, and affiliates.</p>
+                    </div>
+                </div>
+                <div class="invest-card">
+                    <div class="ic-icon"><i data-lucide="trending-up"></i></div>
+                    <div class="ic-content">
+                        <h4>Traffic Potential</h4>
+                        <p>Strong keyword relevance drives organic traffic.</p>
+                    </div>
+                </div>
+                <div class="invest-card">
+                    <div class="ic-icon"><i data-lucide="shield"></i></div>
+                    <div class="ic-content">
+                        <h4>Future-Proof</h4>
+                        <p>Timeless brand for long-term growth.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Third Blog Section (Collapsible) -->
-        <section class="daas-section">
-            <div class="daas-container">
-                <div class="daas-card">
-                    <div class="secondary-blog-header" onclick="toggleThirdBlog()">
-                        <h2 class="daas-title">
-                            <span id="cont-blog1-title">Tanglesgone.com: A High-Potential Beauty Brand Domain Ready for
-                                Lift-Off</span> <i data-lucide="chevron-down" id="thirdBlogIcon"
-                                class="collapse-icon"></i>
-                        </h2>
-                    </div>
-
-                    <div class="daas-content" id="cont-blog1-paragraphs" style="display: none;">
-                        <p class="daas-intro">
-                            In the booming world of haircare and beauty e-commerce, brand identity is everything — and
-                            few names communicate clarity of purpose like Tanglesgone.com. Whether you're launching a
-                            premium detangling product line, building a content-rich authority site, or expanding an
-                            existing beauty brand, this domain offers a distinctive competitive advantage from day one.
-                            Its clean, memorable name instantly conveys transformation, results, and effortless haircare
-                            — the exact message consumers are searching for.
-                        </p>
-
-                        <p class="daas-text">
-                            Unlike generic or overly complex names, Tanglesgone.com taps directly into one of the most
-                            universal pain points in personal care: tangled, unmanageable hair. With millions of monthly
-                            searches around detangling tips, smoothing products, frizz solutions, and hair health, this
-                            domain sits at the intersection of high demand and strong conversion potential. It is
-                            instantly brandable and carries strong emotional relevance—something big beauty brands spend
-                            millions trying to achieve.
-                        </p>
-
-                        <h3 class="daas-heading">Built for Multiple Monetization Paths</h3>
-
-                        <p class="daas-text">
-                            The beauty of Tanglesgone.com lies in its flexibility. You can develop it into:
-                        </p>
-
-                        <ul class="feature-list">
-                            <li><span class="checkmark">1.</span> A DTC product brand selling brushes, sprays, serums,
-                                and conditioners.</li>
-                            <li><span class="checkmark">2.</span> A review and affiliate hub recommending top detangling
-                                tools.</li>
-                            <li><span class="checkmark">3.</span> A salon or stylist resource portal with tutorials and
-                                product partnerships.</li>
-                            <li><span class="checkmark">4.</span> A digital download store offering routines, guides,
-                                and e-books.</li>
-                            <li><span class="checkmark">5.</span> A haircare influencer brand with viral content hooks
-                                built right into the name.</li>
-                        </ul>
-
-                        <p class="daas-text">
-                            No matter the model, the domain's natural keyword alignment drives organic trust and search
-                            visibility.
-                        </p>
-
-                        <h3 class="daas-heading">A Future-Proof Asset</h3>
-
-                        <p class="daas-text">
-                            As consumer interest in natural haircare, protective styling, and curl-safe products
-                            continues to rise, Tanglesgone.com becomes even more valuable. It's a domain with both
-                            immediate usability and long-term brand expansion potential — a rare combination in today's
-                            crowded beauty landscape. If you're ready to acquire a domain that delivers clarity,
-                            authority, and market-ready storytelling in a single name, Tanglesgone.com is a strategic
-                            investment poised for high return.
-                        </p>
-                    </div>
+        <!-- Domain Evaluation Metrics Banner -->
+        <section class="metrics-banner glass-panel" id="evaluation">
+            <span class="sub-label center">DOMAIN EVALUATION</span>
+            <h2 class="section-title center">Key Metrics at a Glance</h2>
+            <div class="mb-grid">
+                <div class="mb-stat">
+                    <span class="mb-label">Domain Age</span>
+                    <span class="mb-value">2+ Years</span>
                 </div>
+                <div class="mb-stat">
+                    <span class="mb-label">Monthly Searches</span>
+                    <span class="mb-value">21</span>
+                </div>
+                <div class="mb-stat">
+                    <span class="mb-label">SEO Rating</span>
+                    <span class="mb-value">8/10</span>
+                </div>
+                <div class="mb-stat">
+                    <span class="mb-label">Backlinks</span>
+                    <span class="mb-value">0</span>
+                </div>
+                <div class="mb-stat">
+                    <span class="mb-label">Spam Score</span>
+                    <span class="mb-value">Low</span>
+                </div>
+            </div>
+            <div class="mb-footer">
+                <span>• Clean history</span>
+                <span>• No penalties</span>
+                <span>• Ready for growth</span>
             </div>
         </section>
 
-        <!-- Image Scroller Section -->
-        <section class="image-scroller-section">
-            <div class="scroller-container">
-                <h2 class="scroller-title">Domain Evaluation</h2>
-                <div class="image-scroller">
-                    <div class="scroller-track" id="scroller-track">
-                        <div class="scroller-item"
-                            onclick="openModal('https://i.ibb.co/844RcR9f/bps-3.png', 'Domain Evaluation Details 1')">
-                            <img src="https://i.ibb.co/844RcR9f/bps-3.png" alt="Domain Extra Details 1"
-                                class="scroller-image">
-                        </div>
-                        <div class="scroller-item"
-                            onclick="openModal('https://i.ibb.co/jPg9jDXg/bps-2.png', 'Domain Evaluation Details 2')">
-                            <img src="https://i.ibb.co/jPg9jDXg/bps-2.png" alt="Domain Extra Details 2"
-                                class="scroller-image">
-                        </div>
-                        <div class="scroller-item"
-                            onclick="openModal('https://i.ibb.co/844RcR9f/bps-3.png', 'Domain Evaluation Details 1')">
-                            <img src="https://i.ibb.co/844RcR9f/bps-3.png" alt="Domain Extra Details 1"
-                                class="scroller-image">
-                        </div>
-                        <div class="scroller-item"
-                            onclick="openModal('https://i.ibb.co/jPg9jDXg/bps-2.png', 'Domain Evaluation Details 2')">
-                            <img src="https://i.ibb.co/jPg9jDXg/bps-2.png" alt="Domain Extra Details 2"
-                                class="scroller-image">
-                        </div>
+        <!-- Who Can Benefit -->
+        <section class="benefit-section">
+            <span class="sub-label center">PERFECT FOR</span>
+            <h2 class="section-title center">Who Can Benefit from This Domain?</h2>
+            
+            <div class="benefit-grid">
+                <div class="benefit-card glass-panel">
+                    <i data-lucide="package"></i>
+                    <div>
+                        <h4>Hair Care Brands</h4>
+                        <p>Build a trusted brand identity.</p>
+                    </div>
+                </div>
+                <div class="benefit-card glass-panel">
+                    <i data-lucide="shopping-bag"></i>
+                    <div>
+                        <h4>eCommerce Stores</h4>
+                        <p>Sell detangling products and tools.</p>
+                    </div>
+                </div>
+                <div class="benefit-card glass-panel">
+                    <i data-lucide="scissors"></i>
+                    <div>
+                        <h4>Salons & Stylists</h4>
+                        <p>Showcase services and attract clients.</p>
+                    </div>
+                </div>
+                <div class="benefit-card glass-panel">
+                    <i data-lucide="camera"></i>
+                    <div>
+                        <h4>Influencers & Bloggers</h4>
+                        <p>Create content & build your community.</p>
                     </div>
                 </div>
             </div>
         </section>
 
-        <!-- Purchase Section -->
-        <section class="purchase-section">
-            <div class="purchase-content">
-                <h2 class="purchase-title">Ready to Purchase?</h2>
-                <p class="purchase-subtitle">
-                    Secure this premium domain and establish your brand in the hair care market
-                </p>
-                <div class="button-group">
-                    <button class="btn btn-secondary btn-lg">Send Email</button>
-                    <button class="btn btn-outline btn-lg" id="viewStatsBtn">View Domain Stats</button>
-                </div>
-
-                <!-- Collapsible Domain Stats Section -->
-                <div class="stats-section" id="statsSection" style="display: none;">
-                    <div class="stats-container">
-                        <h3 class="stats-title">Domain Analytics Dashboard</h3>
-                        <div class="stats-grid">
-                            <div class="stat-card">
-                                <div class="stat-icon">
-                                    <i data-lucide="users"></i>
-                                </div>
-                                <div class="stat-content">
-                                    <div class="stat-value" id="monthlyVisitors">1,847</div>
-                                    <div class="stat-label">Monthly Visitors</div>
-                                    <div class="stat-change positive">+12.3%</div>
-                                </div>
-                            </div>
-
-                            <div class="stat-card">
-                                <div class="stat-icon">
-                                    <i data-lucide="globe"></i>
-                                </div>
-                                <div class="stat-content">
-                                    <div class="stat-value" id="pageViews">8,234</div>
-                                    <div class="stat-label">Page Views</div>
-                                    <div class="stat-change positive">+8.7%</div>
-                                </div>
-                            </div>
-
-                            <div class="stat-card">
-                                <div class="stat-icon">
-                                    <i data-lucide="clock"></i>
-                                </div>
-                                <div class="stat-content">
-                                    <div class="stat-value" id="avgSession">2:34</div>
-                                    <div class="stat-label">Avg. Session</div>
-                                    <div class="stat-change positive">+5.2%</div>
-                                </div>
-                            </div>
-
-                            <div class="stat-card">
-                                <div class="stat-icon">
-                                    <i data-lucide="mouse-pointer"></i>
-                                </div>
-                                <div class="stat-content">
-                                    <div class="stat-value" id="bounceRate">42.1%</div>
-                                    <div class="stat-label">Bounce Rate</div>
-                                    <div class="stat-change negative">-3.1%</div>
-                                </div>
-                            </div>
-
-                            <div class="stat-card">
-                                <div class="stat-icon">
-                                    <i data-lucide="search"></i>
-                                </div>
-                                <div class="stat-content">
-                                    <div class="stat-value" id="organicTraffic">78%</div>
-                                    <div class="stat-label">Organic Traffic</div>
-                                    <div class="stat-change positive">+15.6%</div>
-                                </div>
-                            </div>
-
-                            <div class="stat-card">
-                                <div class="stat-icon">
-                                    <i data-lucide="trending-up"></i>
-                                </div>
-                                <div class="stat-content">
-                                    <div class="stat-value" id="domainAuthority">67</div>
-                                    <div class="stat-label">Domain Authority</div>
-                                    <div class="stat-change positive">+2</div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="stats-chart">
-                            <h4 class="chart-title">Traffic Overview (Last 6 Months)</h4>
-                            <div class="chart-container">
-                                <div class="chart-bars">
-                                    <div class="chart-bar" style="height: 60%;" data-month="Jan"></div>
-                                    <div class="chart-bar" style="height: 75%;" data-month="Feb"></div>
-                                    <div class="chart-bar" style="height: 55%;" data-month="Mar"></div>
-                                    <div class="chart-bar" style="height: 85%;" data-month="Apr"></div>
-                                    <div class="chart-bar" style="height: 90%;" data-month="May"></div>
-                                    <div class="chart-bar" style="height: 100%;" data-month="Jun"></div>
-                                </div>
-                                <div class="chart-labels">
-                                    <span>Jan</span>
-                                    <span>Feb</span>
-                                    <span>Mar</span>
-                                    <span>Apr</span>
-                                    <span>May</span>
-                                    <span>Jun</span>
-                                </div>
-                            </div>
-                        </div>
-
-                        <div class="stats-insights">
-                            <h4 class="insights-title">Key Insights</h4>
-                            <ul class="insights-list">
-                                <li><i data-lucide="check-circle" class="insight-icon"></i> Strong organic growth with
-                                    78% traffic from search engines</li>
-                                <li><i data-lucide="check-circle" class="insight-icon"></i> Low bounce rate indicates
-                                    high user engagement</li>
-                                <li><i data-lucide="check-circle" class="insight-icon"></i> Consistent month-over-month
-                                    traffic growth</li>
-                                <li><i data-lucide="check-circle" class="insight-icon"></i> High domain authority for
-                                    competitive keyword ranking</li>
-                            </ul>
-                        </div>
+        <!-- SEO Blogs Section -->
+        <section class="seo-blogs-section">
+            <div class="glass-panel blog-panel">
+                <h2 class="section-title" id="mini-blog-title">Say Goodbye to Hair Tangles</h2>
+                <div class="blog-content" id="mini-blog-paragraphs"></div>
+                <div class="blog-features">
+                    <div class="blog-feature-box">
+                        <i data-lucide="heart"></i>
+                        <h4 id="sf1-title">Special Feature 1</h4>
+                        <p id="sf1-desc">Feature description here.</p>
+                    </div>
+                    <div class="blog-feature-box">
+                        <i data-lucide="hand"></i>
+                        <h4 id="sf2-title">Special Feature 2</h4>
+                        <p id="sf2-desc">Feature description here.</p>
                     </div>
                 </div>
             </div>
-        </section>
 
-        <!-- Rent Section -->
-        <section class="rent-section">
-            <div class="rent-content">
-                <h2 class="rent-title" id="rent-title">Rent This Domain to Market Your Service</h2>
-                <p class="rent-subtitle" id="rent-subtitle">
-                    Not ready to purchase? Rent Tanglesgone.com to promote your hair detangler brand, hair care
-                    products, or styling tools with instant credibility and SEO benefits.
-                </p>
-                <button class="btn btn-primary btn-lg">Contact promotionocean.com</button>
+            <div class="glass-panel blog-panel collapsible-panel" onclick="this.classList.toggle('open')">
+                <div class="panel-header">
+                    <h2 class="blog-section-title" id="secondary-blog-title">Winter Tangles and How to Beat Them</h2>
+                    <i data-lucide="chevron-down" class="toggle-icon"></i>
+                </div>
+                <div class="panel-body blog-content" id="secondary-blog-paragraphs"></div>
+            </div>
+
+            <div class="glass-panel blog-panel collapsible-panel" onclick="this.classList.toggle('open')">
+                <div class="panel-header">
+                    <h2 class="blog-section-title" id="cont-blog1-title">A High-Potential Beauty Brand Domain</h2>
+                    <i data-lucide="chevron-down" class="toggle-icon"></i>
+                </div>
+                <div class="panel-body blog-content" id="cont-blog1-paragraphs"></div>
             </div>
         </section>
+
+        <!-- Contact/Purchase Form -->
+        <section class="contact-section glass-panel">
+            <div class="contact-left">
+                <span class="sub-label" id="rent-title">READY TO MAKE IT YOURS?</span>
+                <h2 class="section-title">Secure Tanglesgone.com Today</h2>
+                <p id="rent-subtitle">Fill in your details and let's make this premium domain yours.</p>
+                <ul class="gold-check-list mt-8">
+                    <li><i data-lucide="check-circle-2"></i> 100% Secure Escrow Transfer</li>
+                    <li><i data-lucide="check-circle-2"></i> Instant Ownership</li>
+                    <li><i data-lucide="check-circle-2"></i> Full Support Until Transfer</li>
+                </ul>
+            </div>
+            <div class="contact-right">
+                <form class="purchase-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Your Name" required>
+                        <i data-lucide="user"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email Address" required>
+                        <i data-lucide="mail"></i>
+                    </div>
+                    <div class="form-group">
+                        <input type="number" placeholder="Your Offer (USD)" required>
+                        <i data-lucide="dollar-sign"></i>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Your Message (Optional)" rows="3"></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-gold btn-full">I'm Interested - Contact Me <i data-lucide="arrow-right"></i></button>
+                </form>
+            </div>
+        </section>
+
+        <!-- Footer CTA -->
+        <div class="footer-cta glass-panel">
+            <div class="fc-left">
+                <i data-lucide="crown" class="fc-icon"></i>
+                <div>
+                    <h3>Premium Domain. Premium Opportunity.</h3>
+                    <p>Don't miss the chance to own Tanglesgone.com and build a brand that lasts.</p>
+                </div>
+            </div>
+            <button class="btn btn-gold">Enquire Now <i data-lucide="arrow-right"></i></button>
+        </div>
+
+        <!-- Footer -->
+        <footer class="site-footer">
+            <div class="footer-logo">Tanglesgone.com</div>
+            <div class="footer-links">
+                <a href="#overview">Overview</a>
+                <a href="#benefits">Benefits</a>
+                <a href="#evaluation">Evaluation</a>
+                <a href="#insights">Market Insights</a>
+                <a href="#why">Why Tanglesgone?</a>
+            </div>
+            <div class="footer-copy">
+                &copy; 2024 Tanglesgone.com<br>All rights reserved
+            </div>
+        </footer>
     </div>
 
-    <!-- Image Modal -->
-    <div id="imageModal" class="modal">
-        <span class="close" onclick="closeModal()">&times;</span>
-        <img class="modal-content" id="modalImage">
-        <div id="modalCaption"></div>
-    </div>
-
-    <script>
-        // Initialize Lucide icons
+    <script src="supabase.js"></script>
+    <script type="module">
+        import { animate, inView, stagger } from "https://cdn.jsdelivr.net/npm/motion@11.11.13/+esm";
+        
         lucide.createIcons();
 
-        // Domain Stats Toggle Functionality
-        document.addEventListener('DOMContentLoaded', function () {
-            const viewStatsBtn = document.getElementById('viewStatsBtn');
-            const statsSection = document.getElementById('statsSection');
-            let isStatsVisible = false;
-
-            // Function to generate random stats
-            function generateRandomStats() {
-                const stats = {
-                    monthlyVisitors: Math.floor(Math.random() * 2000) + 1000,
-                    pageViews: Math.floor(Math.random() * 5000) + 5000,
-                    avgSession: `${Math.floor(Math.random() * 3) + 1}:${Math.floor(Math.random() * 60).toString().padStart(2, '0')}`,
-                    bounceRate: (Math.random() * 30 + 30).toFixed(1),
-                    organicTraffic: Math.floor(Math.random() * 20 + 70),
-                    domainAuthority: Math.floor(Math.random() * 20 + 50)
-                };
-
-                // Update the DOM with new stats
-                document.getElementById('monthlyVisitors').textContent = stats.monthlyVisitors.toLocaleString();
-                document.getElementById('pageViews').textContent = stats.pageViews.toLocaleString();
-                document.getElementById('avgSession').textContent = stats.avgSession;
-                document.getElementById('bounceRate').textContent = stats.bounceRate + '%';
-                document.getElementById('organicTraffic').textContent = stats.organicTraffic + '%';
-                document.getElementById('domainAuthority').textContent = stats.domainAuthority;
-
-                // Generate random percentage changes
-                const changes = document.querySelectorAll('.stat-change');
-                changes.forEach(change => {
-                    const isPositive = Math.random() > 0.3; // 70% chance of positive
-                    const percentage = (Math.random() * 20 + 1).toFixed(1);
-                    change.textContent = (isPositive ? '+' : '-') + percentage + '%';
-                    change.className = `stat-change ${isPositive ? 'positive' : 'negative'}`;
-                });
-            }
-
-            // Toggle stats section
-            viewStatsBtn.addEventListener('click', function () {
-                if (!isStatsVisible) {
-                    // Generate new random stats each time
-                    generateRandomStats();
-
-                    // Show the section with animation
-                    statsSection.style.display = 'block';
-                    statsSection.style.opacity = '0';
-                    statsSection.style.transform = 'translateY(-20px)';
-
-                    // Animate in
-                    setTimeout(() => {
-                        statsSection.style.transition = 'all 0.3s ease';
-                        statsSection.style.opacity = '1';
-                        statsSection.style.transform = 'translateY(0)';
-                    }, 10);
-
-                    // Update button text
-                    viewStatsBtn.textContent = 'Hide Domain Stats';
-                    isStatsVisible = true;
-                } else {
-                    // Hide the section with animation
-                    statsSection.style.transition = 'all 0.3s ease';
-                    statsSection.style.opacity = '0';
-                    statsSection.style.transform = 'translateY(-20px)';
-
-                    setTimeout(() => {
-                        statsSection.style.display = 'none';
-                    }, 300);
-
-                    // Update button text
-                    viewStatsBtn.textContent = 'View Domain Stats';
-                    isStatsVisible = false;
-                }
-            });
+        // Simple fade-in animations for all glass panels
+        inView(".glass-panel", (info) => {
+            animate(info.target, { opacity: [0, 1], y: [30, 0] }, { duration: 0.8, easing: [0.16, 1, 0.3, 1] });
         });
-
-        // Modal functionality for image scroller
-        function openModal(imageSrc, imageAlt) {
-            const modal = document.getElementById('imageModal');
-            const modalImage = document.getElementById('modalImage');
-            const modalCaption = document.getElementById('modalCaption');
-
-            modal.style.display = 'block';
-            modalImage.src = imageSrc;
-            modalCaption.textContent = imageAlt;
-
-            // Prevent body scroll when modal is open
-            document.body.style.overflow = 'hidden';
-        }
-
-        function closeModal() {
-            const modal = document.getElementById('imageModal');
-            modal.style.display = 'none';
-
-            // Restore body scroll
-            document.body.style.overflow = 'auto';
-        }
-
-        // Close modal when clicking outside the image
-        window.onclick = function (event) {
-            const modal = document.getElementById('imageModal');
-            if (event.target === modal) {
-                closeModal();
-            }
-        }
-
-        // Close modal with Escape key
-        document.addEventListener('keydown', function (event) {
-            if (event.key === 'Escape') {
-                closeModal();
-            }
+        
+        inView(".feature-box", (info) => {
+            animate(info.target, { opacity: [0, 1], y: [20, 0] }, { duration: 0.6, easing: [0.16, 1, 0.3, 1] });
         });
-
-        // Secondary Blog Toggle Functionality
-        function toggleSecondaryBlog() {
-            const content = document.getElementById('secondary-blog-paragraphs');
-            const icon = document.getElementById('secondaryBlogIcon');
-
-            if (content.style.display === 'none' || content.style.display === '') {
-                content.style.display = 'block';
-                content.style.animation = 'slideDown 0.3s ease';
-                icon.style.transform = 'rotate(180deg)';
-            } else {
-                content.style.animation = 'slideUp 0.3s ease';
-                setTimeout(() => {
-                    content.style.display = 'none';
-                }, 300);
-                icon.style.transform = 'rotate(0deg)';
-            }
-        }
-
-        // Third Blog Toggle Functionality
-        function toggleThirdBlog() {
-            const content = document.getElementById('cont-blog1-paragraphs');
-            const icon = document.getElementById('thirdBlogIcon');
-
-            if (content.style.display === 'none' || content.style.display === '') {
-                content.style.display = 'block';
-                content.style.animation = 'slideDown 0.3s ease';
-                icon.style.transform = 'rotate(180deg)';
-            } else {
-                content.style.animation = 'slideUp 0.3s ease';
-                setTimeout(() => {
-                    content.style.display = 'none';
-                }, 300);
-                icon.style.transform = 'rotate(0deg)';
-            }
-        }
-
-        // ==========================================
-        // EXTERNAL SUPABASE FETCH SCRIPT LINKED HERE
-        // ==========================================
+        
+        inView(".hero-metric-card", (info) => {
+            animate(info.target, { opacity: [0, 1], x: [20, 0] }, { duration: 0.6, easing: [0.16, 1, 0.3, 1] });
+        });
     </script>
-    <script src="supabase.js"></script>
 </body>
-
 </html>
