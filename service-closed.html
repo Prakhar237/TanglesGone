@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Service Closed</title>
+    <meta name="robots" content="noindex, nofollow" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet" />
+    <style>
+        *, *::before, *::after {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: #0a0a0f;
+            color: #e0e0e0;
+            overflow: hidden;
+            position: relative;
+        }
+
+        body::before {
+            content: '';
+            position: absolute;
+            top: -50%;
+            left: -50%;
+            width: 200%;
+            height: 200%;
+            background: radial-gradient(ellipse at 30% 20%, rgba(120, 40, 40, 0.15) 0%, transparent 50%),
+                        radial-gradient(ellipse at 70% 80%, rgba(40, 40, 120, 0.1) 0%, transparent 50%);
+            animation: drift 20s ease-in-out infinite alternate;
+            z-index: 0;
+        }
+
+        @keyframes drift {
+            0% { transform: translate(0, 0) rotate(0deg); }
+            100% { transform: translate(-5%, 3%) rotate(2deg); }
+        }
+
+        .container {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+            padding: 3rem 2rem;
+            max-width: 600px;
+        }
+
+        .icon {
+            width: 80px;
+            height: 80px;
+            margin: 0 auto 2rem;
+            border-radius: 50%;
+            background: rgba(220, 60, 60, 0.1);
+            border: 2px solid rgba(220, 60, 60, 0.3);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            animation: pulse 3s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { box-shadow: 0 0 0 0 rgba(220, 60, 60, 0.2); }
+            50% { box-shadow: 0 0 0 20px rgba(220, 60, 60, 0); }
+        }
+
+        .icon svg {
+            width: 36px;
+            height: 36px;
+            stroke: #dc3c3c;
+            fill: none;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+        }
+
+        h1 {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 1rem;
+            letter-spacing: -0.02em;
+        }
+
+        .divider {
+            width: 60px;
+            height: 3px;
+            background: linear-gradient(90deg, #dc3c3c, #8b2525);
+            margin: 0 auto 1.5rem;
+            border-radius: 2px;
+        }
+
+        p {
+            font-size: 1.1rem;
+            line-height: 1.7;
+            color: #9a9ab0;
+            font-weight: 300;
+        }
+
+        .notice {
+            margin-top: 2.5rem;
+            padding: 1.2rem 1.5rem;
+            background: rgba(255, 255, 255, 0.03);
+            border: 1px solid rgba(255, 255, 255, 0.06);
+            border-radius: 12px;
+            backdrop-filter: blur(10px);
+        }
+
+        .notice p {
+            font-size: 0.85rem;
+            color: #6a6a80;
+        }
+
+        .tag {
+            display: inline-block;
+            margin-top: 2rem;
+            padding: 0.4rem 1rem;
+            font-size: 0.7rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: #dc3c3c;
+            border: 1px solid rgba(220, 60, 60, 0.2);
+            border-radius: 100px;
+            font-weight: 600;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="icon">
+            <svg viewBox="0 0 24 24">
+                <circle cx="12" cy="12" r="10"></circle>
+                <line x1="15" y1="9" x2="9" y2="15"></line>
+                <line x1="9" y1="9" x2="15" y2="15"></line>
+            </svg>
+        </div>
+
+        <h1>Service Closed</h1>
+        <div class="divider"></div>
+
+        <p>This service has been permanently closed due to project abandonment and breach of agreement by the client.</p>
+
+        <div class="notice">
+            <p>All associated services, content, and resources have been discontinued effective immediately. No further updates or support will be provided.</p>
+        </div>
+
+        <div class="tag">Project Abandoned</div>
+    </div>
+</body>
+</html>
